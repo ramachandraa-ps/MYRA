@@ -80,6 +80,43 @@ public class Medication {
         return createdAt;
     }
 
+    // Additional getters for compatibility
+    public String getDosage() {
+        return dose;
+    }
+
+    public int getDurationWeeks() {
+        try {
+            return Integer.parseInt(duration);
+        } catch (NumberFormatException e) {
+            return 0;
+        }
+    }
+
+    public String getInstructions() {
+        return notes;
+    }
+
+    public String getSideEffects() {
+        return commonSideEffects;
+    }
+
+    public String getPrescribedBy() {
+        return "Dr. " + doctorId;
+    }
+
+    public String getStatus() {
+        return isActive ? "active" : "inactive";
+    }
+
+    public String getStartDate() {
+        return createdAt;
+    }
+
+    public String getEndDate() {
+        return createdAt;
+    }
+
     // Setters
     public void setId(int id) {
         this.id = id;

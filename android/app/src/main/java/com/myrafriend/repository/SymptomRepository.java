@@ -111,7 +111,12 @@ public class SymptomRepository {
         MutableLiveData<AuthRepository.Resource<Void>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        apiService.reportFlare(patientId, severity, notes).enqueue(new Callback<ApiResponse<Void>>() {
+        java.util.Map<String, Object> flareData = new java.util.HashMap<>();
+        flareData.put("patient_id", patientId);
+        flareData.put("severity", severity);
+        flareData.put("notes", notes);
+
+        apiService.reportFlare(flareData).enqueue(new Callback<ApiResponse<Void>>() {
             @Override
             public void onResponse(@NonNull Call<ApiResponse<Void>> call,
                                    @NonNull Response<ApiResponse<Void>> response) {

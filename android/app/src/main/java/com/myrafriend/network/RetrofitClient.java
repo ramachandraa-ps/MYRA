@@ -152,6 +152,22 @@ public class RetrofitClient {
     }
 
     /**
+     * Get user full name
+     */
+    public String getUserFullName() {
+        SharedPreferences prefs = context.getSharedPreferences("MyRAFriend", Context.MODE_PRIVATE);
+        return prefs.getString("user_name", "");
+    }
+
+    /**
+     * Get user email
+     */
+    public String getUserEmail() {
+        SharedPreferences prefs = context.getSharedPreferences("MyRAFriend", Context.MODE_PRIVATE);
+        return prefs.getString("user_email", "");
+    }
+
+    /**
      * Clear all user data (for logout)
      */
     public void clearUserData() {

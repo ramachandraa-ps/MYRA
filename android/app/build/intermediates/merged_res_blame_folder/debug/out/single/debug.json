@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.myrafriend.app-main-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_dashboard.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_dashboard.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.myrafriend.app-main-50:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_message.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_message.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/layout_fragment_medication_list.xml.flat",
+        "source": "com.myrafriend.app-main-50:/layout/fragment_medication_list.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/layout_item_medication.xml.flat",
+        "source": "com.myrafriend.app-main-50:/layout/item_medication.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.myrafriend.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_notification.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_notification.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_rehab.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_rehab.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/layout_fragment_symptom_log.xml.flat",
+        "source": "com.myrafriend.app-main-50:/layout/fragment_symptom_log.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/color_bottom_nav_color.xml.flat",
+        "source": "com.myrafriend.app-main-50:/color/bottom_nav_color.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_messages.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_messages.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/layout_fragment_patient_dashboard.xml.flat",
+        "source": "com.myrafriend.app-main-50:/layout/fragment_patient_dashboard.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/xml_network_security_config.xml.flat",
+        "source": "com.myrafriend.app-main-50:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_patients.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_patients.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/menu_bottom_navigation_doctor.xml.flat",
+        "source": "com.myrafriend.app-main-50:/menu/bottom_navigation_doctor.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/layout_activity_login.xml.flat",
+        "source": "com.myrafriend.app-main-50:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_warning.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_warning.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/menu_bottom_navigation_patient.xml.flat",
+        "source": "com.myrafriend.app-main-50:/menu/bottom_navigation_patient.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_symptoms.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_symptoms.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_medications.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_medications.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_medication.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_medication.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_bg_status_chip.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/bg_status_chip.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/layout_activity_splash.xml.flat",
+        "source": "com.myrafriend.app-main-50:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/drawable_ic_appointment.xml.flat",
+        "source": "com.myrafriend.app-main-50:/drawable/ic_appointment.xml"
+    },
+    {
+        "merged": "com.myrafriend.app-merged_res-48:/layout_activity_main.xml.flat",
+        "source": "com.myrafriend.app-main-50:/layout/activity_main.xml"
+    }
+]

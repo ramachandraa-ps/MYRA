@@ -10,6 +10,7 @@ import com.myrafriend.repository.AuthRepository;
 import com.myrafriend.repository.DoctorRepository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Doctor ViewModel
@@ -26,14 +27,14 @@ public class DoctorViewModel extends AndroidViewModel {
     /**
      * Get assigned patients
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getAssignedPatients(int doctorId) {
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getAssignedPatients(int doctorId) {
         return doctorRepository.getAssignedPatients(doctorId);
     }
 
     /**
      * Get patient detail
      */
-    public LiveData<AuthRepository.Resource<Object>> getPatientDetail(int patientId) {
+    public LiveData<AuthRepository.Resource<Map<String, Object>>> getPatientDetail(int patientId) {
         return doctorRepository.getPatientDetail(patientId);
     }
 
@@ -58,14 +59,14 @@ public class DoctorViewModel extends AndroidViewModel {
     /**
      * Get medications master list
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getMedicationsMaster() {
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getMedicationsMaster() {
         return doctorRepository.getMedicationsMaster();
     }
 
     /**
      * Get rehab exercises master list
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getRehabExercisesMaster() {
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getRehabExercisesMaster() {
         return doctorRepository.getRehabExercisesMaster();
     }
 }

@@ -1,0 +1,51 @@
+com.myrafriend.app-jetified-core-ktx-1.9.0-0 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\03c6bfc4b20336875724eb8c8f4b6d4e\transformed\jetified-core-ktx-1.9.0\res
+com.myrafriend.app-work-runtime-2.9.0-1 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\0bd9b55de60e8afd0d6f99af3ec949c6\transformed\work-runtime-2.9.0\res
+com.myrafriend.app-transition-1.2.0-2 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\1f6314fcde6b8b0413947acad8298ba0\transformed\transition-1.2.0\res
+com.myrafriend.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-3 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\257c1dcc9210c6175e0560c37ddba2c8\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.myrafriend.app-jetified-play-services-basement-18.1.0-4 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\26c9ea4045d69add9799c753218d77dc\transformed\jetified-play-services-basement-18.1.0\res
+com.myrafriend.app-appcompat-1.6.1-5 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\2a3844c3214711bbc414c77973376d1e\transformed\appcompat-1.6.1\res
+com.myrafriend.app-lifecycle-runtime-2.7.0-6 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\2ad4ee83f2ca1aa7a4ad960c2c1e69ba\transformed\lifecycle-runtime-2.7.0\res
+com.myrafriend.app-fragment-1.3.6-7 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\481677ccf43b48222754952d1b04e8a0\transformed\fragment-1.3.6\res
+com.myrafriend.app-jetified-startup-runtime-1.1.1-8 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\485696055ae540dbedf78c5602ac461f\transformed\jetified-startup-runtime-1.1.1\res
+com.myrafriend.app-jetified-customview-poolingcontainer-1.0.0-9 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\49bfba19e5a2fdb6a034452e0057211f\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.myrafriend.app-jetified-annotation-experimental-1.3.0-10 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\6283cece25a263aeae295d481fd070c1\transformed\jetified-annotation-experimental-1.3.0\res
+com.myrafriend.app-jetified-firebase-common-20.4.2-11 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\6819194848a4266f00c64bdc5e92b0c2\transformed\jetified-firebase-common-20.4.2\res
+com.myrafriend.app-lifecycle-livedata-2.7.0-12 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\6aee25e79988c1153618308240efa546\transformed\lifecycle-livedata-2.7.0\res
+com.myrafriend.app-lifecycle-viewmodel-2.7.0-13 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\6ec25bd5df3fb1256d0a8629a9921903\transformed\lifecycle-viewmodel-2.7.0\res
+com.myrafriend.app-lifecycle-livedata-core-2.7.0-14 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\6f403172d3e2b82da18b932d7b9ad2ed\transformed\lifecycle-livedata-core-2.7.0\res
+com.myrafriend.app-core-runtime-2.2.0-15 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\701a8aa8123f3c02655e1033deb4ff5f\transformed\core-runtime-2.2.0\res
+com.myrafriend.app-drawerlayout-1.1.1-16 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\78644b35d6a259f228aa9d5a1efacb42\transformed\drawerlayout-1.1.1\res
+com.myrafriend.app-jetified-appcompat-resources-1.6.1-17 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\7d0ca102c87e95b3833a0385e47131cf\transformed\jetified-appcompat-resources-1.6.1\res
+com.myrafriend.app-core-1.9.0-18 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\82baae48b1ae42f59692e53404035801\transformed\core-1.9.0\res
+com.myrafriend.app-recyclerview-1.3.2-19 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\82c25b6d3780cb7e68c095baeec28794\transformed\recyclerview-1.3.2\res
+com.myrafriend.app-jetified-play-services-base-18.0.1-20 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\840b8d80441a050eb1df7495c2d57c23\transformed\jetified-play-services-base-18.0.1\res
+com.myrafriend.app-sqlite-framework-2.4.0-21 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\89746950adc925909074acecaafb0a28\transformed\sqlite-framework-2.4.0\res
+com.myrafriend.app-jetified-ads-adservices-1.0.0-beta05-22 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\8c9384101479fef0fbd4e497de11791a\transformed\jetified-ads-adservices-1.0.0-beta05\res
+com.myrafriend.app-coordinatorlayout-1.1.0-23 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\9481946396128a2dab968ce8e91b2dde\transformed\coordinatorlayout-1.1.0\res
+com.myrafriend.app-jetified-profileinstaller-1.3.0-24 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\976592efadba68bc87cc4c289a2d619a\transformed\jetified-profileinstaller-1.3.0\res
+com.myrafriend.app-material-1.11.0-25 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\99320f375d4a85e39b688ddd5cf897c2\transformed\material-1.11.0\res
+com.myrafriend.app-jetified-lifecycle-process-2.7.0-26 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\9c5509081eca72ccb4db94dc305463b6\transformed\jetified-lifecycle-process-2.7.0\res
+com.myrafriend.app-jetified-lifecycle-livedata-core-ktx-2.7.0-27 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\9d543cc1ba0d64bc998caabf45dde92e\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
+com.myrafriend.app-jetified-lifecycle-service-2.7.0-28 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\9de0e5cfbd1ecb0cdefedb6e4035180b\transformed\jetified-lifecycle-service-2.7.0\res
+com.myrafriend.app-jetified-glide-4.16.0-29 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\a05510fde4e337dfe79a1eea9f5ae285\transformed\jetified-glide-4.16.0\res
+com.myrafriend.app-jetified-ads-adservices-java-1.0.0-beta05-30 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\a2705acd385bf41fa462e1dfbf012e20\transformed\jetified-ads-adservices-java-1.0.0-beta05\res
+com.myrafriend.app-jetified-room-ktx-2.6.1-31 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\a36ec048b06dac860f4a5f9e2bfefdd2\transformed\jetified-room-ktx-2.6.1\res
+com.myrafriend.app-cardview-1.0.0-32 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\a87e798229f04c3e512edda7f50b26dc\transformed\cardview-1.0.0\res
+com.myrafriend.app-sqlite-2.4.0-33 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\ac399cb2771b36c292c6b7802723a685\transformed\sqlite-2.4.0\res
+com.myrafriend.app-jetified-activity-1.8.0-34 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\af70fe005ee8be02f8db8a1711f51193\transformed\jetified-activity-1.8.0\res
+com.myrafriend.app-jetified-emoji2-views-helper-1.2.0-35 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\b2128aa37a97dce9c7624240f1e2be57\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.myrafriend.app-room-runtime-2.6.1-36 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\b5095761b84b7f6d476ef5dd80449828\transformed\room-runtime-2.6.1\res
+com.myrafriend.app-jetified-savedstate-1.2.1-37 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\c0551105341493ee3379733196afa37d\transformed\jetified-savedstate-1.2.1\res
+com.myrafriend.app-jetified-firebase-messaging-23.4.0-38 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\c436566759e26746b9285819c476d99d\transformed\jetified-firebase-messaging-23.4.0\res
+com.myrafriend.app-constraintlayout-2.1.4-39 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\d4e2c951c379a343b055ae42bdfabb98\transformed\constraintlayout-2.1.4\res
+com.myrafriend.app-jetified-play-services-measurement-api-21.5.0-40 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\dc4c911a3d0da125d207cd5b299a2bd2\transformed\jetified-play-services-measurement-api-21.5.0\res
+com.myrafriend.app-jetified-emoji2-1.2.0-41 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\fb2a2d3af10db23198aa17dbcd000f64\transformed\jetified-emoji2-1.2.0\res
+com.myrafriend.app-jetified-viewpager2-1.1.0-beta02-42 C:\Users\Ramachandraa PS\.gradle\caches\8.12\transforms\fce9e2e92db0fb05a39d3baee89712b0\transformed\jetified-viewpager2-1.1.0-beta02\res
+com.myrafriend.app-google-services-43 D:\Mobile Apps Native\MYRA\android\app\build\generated\res\google-services\debug
+com.myrafriend.app-pngs-44 D:\Mobile Apps Native\MYRA\android\app\build\generated\res\pngs\debug
+com.myrafriend.app-resValues-45 D:\Mobile Apps Native\MYRA\android\app\build\generated\res\resValues\debug
+com.myrafriend.app-packageDebugResources-46 D:\Mobile Apps Native\MYRA\android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.myrafriend.app-packageDebugResources-47 D:\Mobile Apps Native\MYRA\android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.myrafriend.app-merged_res-48 D:\Mobile Apps Native\MYRA\android\app\build\intermediates\merged_res\debug
+com.myrafriend.app-debug-49 D:\Mobile Apps Native\MYRA\android\app\src\debug\res
+com.myrafriend.app-main-50 D:\Mobile Apps Native\MYRA\android\app\src\main\res

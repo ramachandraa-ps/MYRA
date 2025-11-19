@@ -34,6 +34,21 @@ public class SymptomLog {
         this.notes = notes;
     }
 
+    public SymptomLog(int patientId, int painLevel, int jointCount, String morningStiffness,
+                      int fatigueLevel, boolean swelling, boolean warmth,
+                      String functionalAbility, String notes, String logDate, String createdAt) {
+        this.patientId = patientId;
+        this.painLevel = painLevel;
+        this.jointCount = jointCount;
+        this.morningStiffness = morningStiffness;
+        this.fatigueLevel = fatigueLevel;
+        this.swelling = swelling;
+        this.warmth = warmth;
+        this.functionalAbility = functionalAbility;
+        this.notes = notes;
+        this.createdAt = createdAt;
+    }
+
     // Getters
     public int getId() {
         return id;
@@ -76,6 +91,10 @@ public class SymptomLog {
     }
 
     public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getLogDate() {
         return createdAt;
     }
 

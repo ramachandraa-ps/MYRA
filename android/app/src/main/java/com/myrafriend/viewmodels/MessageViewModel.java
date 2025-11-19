@@ -10,6 +10,7 @@ import com.myrafriend.repository.AuthRepository;
 import com.myrafriend.repository.MessageRepository;
 
 import java.util.List;
+import java.util.Map;
 
 import okhttp3.MultipartBody;
 
@@ -28,7 +29,7 @@ public class MessageViewModel extends AndroidViewModel {
     /**
      * Get messages
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getMessages(int userId) {
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getMessages(int userId) {
         return messageRepository.getMessages(userId);
     }
 
@@ -50,7 +51,7 @@ public class MessageViewModel extends AndroidViewModel {
     /**
      * Get appointments
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getAppointments(int userId, String roleId) {
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getAppointments(int userId, String roleId) {
         return messageRepository.getAppointments(userId, roleId);
     }
 

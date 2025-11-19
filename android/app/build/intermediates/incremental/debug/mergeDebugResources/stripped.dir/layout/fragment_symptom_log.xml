@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Your Symptoms"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Pain Level -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pain_level"
+            android:textSize="16sp"
+            android:textColor="@color/text_dark"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_pain_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="10"
+            android:stepSize="1"
+            android:value="0"
+            app:thumbColor="@color/primary_teal"
+            app:trackColorActive="@color/primary_teal"
+            app:trackColorInactive="@color/border_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Joint Count -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/joint_count"
+            android:textSize="16sp"
+            android:textColor="@color/text_dark"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_joint_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="28"
+            android:stepSize="1"
+            android:value="0"
+            app:thumbColor="@color/primary_teal"
+            app:trackColorActive="@color/primary_teal"
+            app:trackColorInactive="@color/border_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Morning Stiffness Duration -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_morning_stiffness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/morning_stiffness"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/primary_teal"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_morning_stiffness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Fatigue Level -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fatigue_level"
+            android:textSize="16sp"
+            android:textColor="@color/text_dark"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_fatigue_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="10"
+            android:stepSize="1"
+            android:value="0"
+            app:thumbColor="@color/primary_teal"
+            app:trackColorActive="@color/primary_teal"
+            app:trackColorInactive="@color/border_gray"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Swelling Checkbox -->
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_swelling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/swelling"
+            android:textSize="16sp"
+            app:buttonTint="@color/primary_teal"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Warmth Checkbox -->
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_warmth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/warmth"
+            android:textSize="16sp"
+            app:buttonTint="@color/primary_teal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Functional Ability -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_functional_ability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/functional_ability"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/primary_teal"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_functional_ability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Notes -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notes"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/primary_teal"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:maxLines="5"
+                android:gravity="top" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Submit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit_symptom_log"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/submit"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/primary_teal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Report Flare Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_report_flare"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/report_flare"
+            android:textSize="18sp"
+            android:textColor="@color/error_red"
+            app:backgroundTint="@color/white"
+            app:strokeColor="@color/error_red"
+            app:strokeWidth="2dp"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@color/primary_teal" />
+
+    </LinearLayout>
+
+</ScrollView>

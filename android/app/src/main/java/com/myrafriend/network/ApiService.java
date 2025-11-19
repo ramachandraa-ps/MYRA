@@ -44,6 +44,9 @@ public interface ApiService {
     @POST("patient/flare-report")
     Call<ApiResponse<Void>> submitFlareReport(@Body Map<String, Object> flareReport);
 
+    @POST("patient/flare-report")
+    Call<ApiResponse<Void>> reportFlare(@Body Map<String, Object> flareReport);
+
     // Medications
     @GET("patient/medications/{patient_id}")
     Call<ApiResponse<List<Medication>>> getAssignedMedications(@Path("patient_id") int patientId);

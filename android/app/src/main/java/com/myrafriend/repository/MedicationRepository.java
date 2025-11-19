@@ -17,7 +17,9 @@ import com.myrafriend.network.ApiResponse;
 import com.myrafriend.network.ApiService;
 import com.myrafriend.network.RetrofitClient;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -107,7 +109,12 @@ public class MedicationRepository {
             long id = medicationIntakeDao.insert(entity);
 
             // Then sync to server
-            apiService.recordMedicationIntake(assignedMedicationId, status, notes)
+            java.util.Map<String, Object> intakeData = new java.util.HashMap<>();
+            intakeData.put("assigned_medication_id", assignedMedicationId);
+            intakeData.put("status", status);
+            intakeData.put("notes", notes);
+
+            apiService.recordMedicationIntake(intakeData)
                     .enqueue(new Callback<ApiResponse<Void>>() {
                 @Override
                 public void onResponse(@NonNull Call<ApiResponse<Void>> call,
@@ -142,16 +149,16 @@ public class MedicationRepository {
     /**
      * Get adherence metrics
      */
-    public LiveData<AuthRepository.Resource<Object>> getAdherenceMetrics(int patientId) {
-        MutableLiveData<AuthRepository.Resource<Object>> result = new MutableLiveData<>();
+    public LiveData<AuthRepository.Resource<Map<String, Object>>> getAdherenceMetrics(int patientId) {
+        MutableLiveData<AuthRepository.Resource<Map<String, Object>>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        apiService.getAdherenceMetrics(patientId).enqueue(new Callback<ApiResponse<Object>>() {
+        apiService.getAdherenceMetrics(patientId).enqueue(new Callback<ApiResponse<Map<String, Object>>>() {
             @Override
-            public void onResponse(@NonNull Call<ApiResponse<Object>> call,
-                                   @NonNull Response<ApiResponse<Object>> response) {
+            public void onResponse(@NonNull Call<ApiResponse<Map<String, Object>>> call,
+                                   @NonNull Response<ApiResponse<Map<String, Object>>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    ApiResponse<Object> apiResponse = response.body();
+                    ApiResponse<Map<String, Object>> apiResponse = response.body();
 
                     if (apiResponse.isSuccess()) {
                         result.setValue(AuthRepository.Resource.success(apiResponse.getData()));
@@ -164,7 +171,7 @@ public class MedicationRepository {
             }
 
             @Override
-            public void onFailure(@NonNull Call<ApiResponse<Object>> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<ApiResponse<Map<String, Object>>> call, @NonNull Throwable t) {
                 Log.e(TAG, "Adherence metrics error: " + t.getMessage());
                 result.setValue(AuthRepository.Resource.error("Network error: " + t.getMessage(), null));
             }

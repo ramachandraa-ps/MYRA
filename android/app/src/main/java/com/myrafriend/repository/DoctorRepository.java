@@ -36,16 +36,16 @@ public class DoctorRepository {
     /**
      * Get assigned patients
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getAssignedPatients(int doctorId) {
-        MutableLiveData<AuthRepository.Resource<List<Object>>> result = new MutableLiveData<>();
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getAssignedPatients(int doctorId) {
+        MutableLiveData<AuthRepository.Resource<List<Map<String, Object>>>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        apiService.getAssignedPatients(doctorId).enqueue(new Callback<ApiResponse<List<Object>>>() {
+        apiService.getAssignedPatients(doctorId).enqueue(new Callback<ApiResponse<List<Map<String, Object>>>>() {
             @Override
-            public void onResponse(@NonNull Call<ApiResponse<List<Object>>> call,
-                                   @NonNull Response<ApiResponse<List<Object>>> response) {
+            public void onResponse(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call,
+                                   @NonNull Response<ApiResponse<List<Map<String, Object>>>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    ApiResponse<List<Object>> apiResponse = response.body();
+                    ApiResponse<List<Map<String, Object>>> apiResponse = response.body();
 
                     if (apiResponse.isSuccess()) {
                         result.setValue(AuthRepository.Resource.success(apiResponse.getData()));
@@ -58,7 +58,7 @@ public class DoctorRepository {
             }
 
             @Override
-            public void onFailure(@NonNull Call<ApiResponse<List<Object>>> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call, @NonNull Throwable t) {
                 Log.e(TAG, "Get patients error: " + t.getMessage());
                 result.setValue(AuthRepository.Resource.error("Network error: " + t.getMessage(), null));
             }
@@ -70,16 +70,16 @@ public class DoctorRepository {
     /**
      * Get patient detail
      */
-    public LiveData<AuthRepository.Resource<Object>> getPatientDetail(int patientId) {
-        MutableLiveData<AuthRepository.Resource<Object>> result = new MutableLiveData<>();
+    public LiveData<AuthRepository.Resource<Map<String, Object>>> getPatientDetail(int patientId) {
+        MutableLiveData<AuthRepository.Resource<Map<String, Object>>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        apiService.getPatientDetail(patientId).enqueue(new Callback<ApiResponse<Object>>() {
+        apiService.getPatientDetail(patientId).enqueue(new Callback<ApiResponse<Map<String, Object>>>() {
             @Override
-            public void onResponse(@NonNull Call<ApiResponse<Object>> call,
-                                   @NonNull Response<ApiResponse<Object>> response) {
+            public void onResponse(@NonNull Call<ApiResponse<Map<String, Object>>> call,
+                                   @NonNull Response<ApiResponse<Map<String, Object>>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    ApiResponse<Object> apiResponse = response.body();
+                    ApiResponse<Map<String, Object>> apiResponse = response.body();
 
                     if (apiResponse.isSuccess()) {
                         result.setValue(AuthRepository.Resource.success(apiResponse.getData()));
@@ -92,7 +92,7 @@ public class DoctorRepository {
             }
 
             @Override
-            public void onFailure(@NonNull Call<ApiResponse<Object>> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<ApiResponse<Map<String, Object>>> call, @NonNull Throwable t) {
                 Log.e(TAG, "Get patient detail error: " + t.getMessage());
                 result.setValue(AuthRepository.Resource.error("Network error: " + t.getMessage(), null));
             }
@@ -191,16 +191,16 @@ public class DoctorRepository {
     /**
      * Get medications master list
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getMedicationsMaster() {
-        MutableLiveData<AuthRepository.Resource<List<Object>>> result = new MutableLiveData<>();
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getMedicationsMaster() {
+        MutableLiveData<AuthRepository.Resource<List<Map<String, Object>>>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        apiService.getMedicationsMaster().enqueue(new Callback<ApiResponse<List<Object>>>() {
+        apiService.getMedicationsMaster().enqueue(new Callback<ApiResponse<List<Map<String, Object>>>>() {
             @Override
-            public void onResponse(@NonNull Call<ApiResponse<List<Object>>> call,
-                                   @NonNull Response<ApiResponse<List<Object>>> response) {
+            public void onResponse(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call,
+                                   @NonNull Response<ApiResponse<List<Map<String, Object>>>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    ApiResponse<List<Object>> apiResponse = response.body();
+                    ApiResponse<List<Map<String, Object>>> apiResponse = response.body();
 
                     if (apiResponse.isSuccess()) {
                         result.setValue(AuthRepository.Resource.success(apiResponse.getData()));
@@ -213,7 +213,7 @@ public class DoctorRepository {
             }
 
             @Override
-            public void onFailure(@NonNull Call<ApiResponse<List<Object>>> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call, @NonNull Throwable t) {
                 Log.e(TAG, "Get medications master error: " + t.getMessage());
                 result.setValue(AuthRepository.Resource.error("Network error: " + t.getMessage(), null));
             }
@@ -225,16 +225,16 @@ public class DoctorRepository {
     /**
      * Get rehab exercises master list
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getRehabExercisesMaster() {
-        MutableLiveData<AuthRepository.Resource<List<Object>>> result = new MutableLiveData<>();
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getRehabExercisesMaster() {
+        MutableLiveData<AuthRepository.Resource<List<Map<String, Object>>>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        apiService.getRehabExercisesMaster().enqueue(new Callback<ApiResponse<List<Object>>>() {
+        apiService.getRehabExercisesMaster().enqueue(new Callback<ApiResponse<List<Map<String, Object>>>>() {
             @Override
-            public void onResponse(@NonNull Call<ApiResponse<List<Object>>> call,
-                                   @NonNull Response<ApiResponse<List<Object>>> response) {
+            public void onResponse(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call,
+                                   @NonNull Response<ApiResponse<List<Map<String, Object>>>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    ApiResponse<List<Object>> apiResponse = response.body();
+                    ApiResponse<List<Map<String, Object>>> apiResponse = response.body();
 
                     if (apiResponse.isSuccess()) {
                         result.setValue(AuthRepository.Resource.success(apiResponse.getData()));
@@ -247,7 +247,7 @@ public class DoctorRepository {
             }
 
             @Override
-            public void onFailure(@NonNull Call<ApiResponse<List<Object>>> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call, @NonNull Throwable t) {
                 Log.e(TAG, "Get rehab exercises error: " + t.getMessage());
                 result.setValue(AuthRepository.Resource.error("Network error: " + t.getMessage(), null));
             }

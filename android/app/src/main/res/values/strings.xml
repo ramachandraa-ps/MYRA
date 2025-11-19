@@ -60,4 +60,7 @@
     <string name="no_data">No data available</string>
     <string name="error_occurred">An error occurred</string>
     <string name="logout">Logout</string>
+
+    <!-- Firebase Notifications -->
+    <string name="default_notification_channel_id">default_channel</string>
 </resources>

@@ -38,16 +38,16 @@ public class MessageRepository {
     /**
      * Get messages
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getMessages(int userId) {
-        MutableLiveData<AuthRepository.Resource<List<Object>>> result = new MutableLiveData<>();
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getMessages(int userId) {
+        MutableLiveData<AuthRepository.Resource<List<Map<String, Object>>>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        apiService.getMessages(userId).enqueue(new Callback<ApiResponse<List<Object>>>() {
+        apiService.getMessages(userId).enqueue(new Callback<ApiResponse<List<Map<String, Object>>>>() {
             @Override
-            public void onResponse(@NonNull Call<ApiResponse<List<Object>>> call,
-                                   @NonNull Response<ApiResponse<List<Object>>> response) {
+            public void onResponse(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call,
+                                   @NonNull Response<ApiResponse<List<Map<String, Object>>>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    ApiResponse<List<Object>> apiResponse = response.body();
+                    ApiResponse<List<Map<String, Object>>> apiResponse = response.body();
 
                     if (apiResponse.isSuccess()) {
                         result.setValue(AuthRepository.Resource.success(apiResponse.getData()));
@@ -60,7 +60,7 @@ public class MessageRepository {
             }
 
             @Override
-            public void onFailure(@NonNull Call<ApiResponse<List<Object>>> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call, @NonNull Throwable t) {
                 Log.e(TAG, "Get messages error: " + t.getMessage());
                 result.setValue(AuthRepository.Resource.error("Network error: " + t.getMessage(), null));
             }
@@ -77,12 +77,11 @@ public class MessageRepository {
         MutableLiveData<AuthRepository.Resource<Void>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        RequestBody receiverIdBody = RequestBody.create(
-                okhttp3.MediaType.parse("text/plain"), String.valueOf(receiverId));
-        RequestBody messageBody = RequestBody.create(
-                okhttp3.MediaType.parse("text/plain"), message);
+        Map<String, Object> messageData = new HashMap<>();
+        messageData.put("receiver_id", receiverId);
+        messageData.put("message", message);
 
-        apiService.sendMessage(receiverIdBody, messageBody, attachment)
+        apiService.sendMessage(messageData)
                 .enqueue(new Callback<ApiResponse<Void>>() {
             @Override
             public void onResponse(@NonNull Call<ApiResponse<Void>> call,
@@ -117,7 +116,7 @@ public class MessageRepository {
         MutableLiveData<AuthRepository.Resource<Void>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        Map<String, Integer> data = new HashMap<>();
+        Map<String, Object> data = new HashMap<>();
         data.put("user_id", userId);
 
         apiService.markMessagesAsRead(data).enqueue(new Callback<ApiResponse<Void>>() {
@@ -150,16 +149,16 @@ public class MessageRepository {
     /**
      * Get appointments
      */
-    public LiveData<AuthRepository.Resource<List<Object>>> getAppointments(int userId, String roleId) {
-        MutableLiveData<AuthRepository.Resource<List<Object>>> result = new MutableLiveData<>();
+    public LiveData<AuthRepository.Resource<List<Map<String, Object>>>> getAppointments(int userId, String roleId) {
+        MutableLiveData<AuthRepository.Resource<List<Map<String, Object>>>> result = new MutableLiveData<>();
         result.setValue(AuthRepository.Resource.loading(null));
 
-        apiService.getAppointments(userId, roleId).enqueue(new Callback<ApiResponse<List<Object>>>() {
+        apiService.getAppointments().enqueue(new Callback<ApiResponse<List<Map<String, Object>>>>() {
             @Override
-            public void onResponse(@NonNull Call<ApiResponse<List<Object>>> call,
-                                   @NonNull Response<ApiResponse<List<Object>>> response) {
+            public void onResponse(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call,
+                                   @NonNull Response<ApiResponse<List<Map<String, Object>>>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    ApiResponse<List<Object>> apiResponse = response.body();
+                    ApiResponse<List<Map<String, Object>>> apiResponse = response.body();
 
                     if (apiResponse.isSuccess()) {
                         result.setValue(AuthRepository.Resource.success(apiResponse.getData()));
@@ -172,7 +171,7 @@ public class MessageRepository {
             }
 
             @Override
-            public void onFailure(@NonNull Call<ApiResponse<List<Object>>> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<ApiResponse<List<Map<String, Object>>>> call, @NonNull Throwable t) {
                 Log.e(TAG, "Get appointments error: " + t.getMessage());
                 result.setValue(AuthRepository.Resource.error("Network error: " + t.getMessage(), null));
             }

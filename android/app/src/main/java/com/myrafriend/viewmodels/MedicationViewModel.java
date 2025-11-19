@@ -12,6 +12,7 @@ import com.myrafriend.repository.AuthRepository;
 import com.myrafriend.repository.MedicationRepository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Medication ViewModel
@@ -43,7 +44,7 @@ public class MedicationViewModel extends AndroidViewModel {
     /**
      * Get adherence metrics
      */
-    public LiveData<AuthRepository.Resource<Object>> getAdherenceMetrics(int patientId) {
+    public LiveData<AuthRepository.Resource<Map<String, Object>>> getAdherenceMetrics(int patientId) {
         return medicationRepository.getAdherenceMetrics(patientId);
     }
 
