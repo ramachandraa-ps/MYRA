@@ -27,7 +27,9 @@ android {
             buildConfigField "String", "API_BASE_URL", "\"https://api.myrafriend.com/\""
         }
         debug {
-            buildConfigField "String", "API_BASE_URL", "\"http://10.0.2.2/backend/\""
+            // For Physical Device: Replace YOUR_COMPUTER_IP with actual IP from ipconfig
+            // For Emulator: Use 10.0.2.2
+            buildConfigField "String", "API_BASE_URL", "\"http://YOUR_COMPUTER_IP/backend/\""
         }
     }
 
